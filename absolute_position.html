@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>절대위치</title>
+<link rel="stylesheet" href="position.css">
+</head>
+<body>
+
+<h1>절대(absolute) 위치 지정방식</h1>        
+<div class="relative_position_2">
+    이 요소는 상대 위치 지정 방식으로 설정하였습니다.
+    <div class="absolute_position"> 
+        <!-- 상위요소가 relative => relative를 기준으로 -->
+        이 요소는 절대 위치 지정방식으로 설정한 후 top 속성값을 50px로 설정하였습니다.
+    </div>
+</div>
+
+<!-- 상위 요소가 없는 경우 => bode를 기준으로 위치 -->
+<div class="absolute_position"> 
+    이 요소는 절대 위치 지정방식으로 설정한 후 top 속성값을 50px로 설정하였습니다.
+    <div class="absolute_position">
+        이 요소는 절대 위치 지정방식으로 설정한 후 top 속성값을 50px로 설정하였습니다.
+    </div>
+</div>
+
+<p>조상요소를 기준으로 위치를 설정
+    만약에 조상요소가 없다면, body 기준으로 위치를 설정
+</p>
+    
+
+</body>
+</html>
