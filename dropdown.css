@@ -1,0 +1,17 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+    border: 2px solid red;
+}
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: rgb(122, 122, 228);
+    border: 2px solid blue;
+    color: aliceblue;
+  
+
+}
+.dropdown:hover .dropdown_content {
+    display: block;
+}
